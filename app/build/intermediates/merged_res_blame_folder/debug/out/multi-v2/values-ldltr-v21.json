@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/william/Documents/TinyWeb/Apps/TinyMessages/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ldltr-v21/values-ldltr-v21.xml",
+            "map": [
+                {
+                    "source": "/home/william/.gradle/caches/transforms-3/2d2911dab30228132880aabc976d7af0/transformed/appcompat-1.2.0/res/values-ldltr-v21/values-ldltr-v21.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "112",
+                        "endOffsets": "163"
+                    }
+                }
+            ]
+        }
+    ]
+}
