@@ -1,1 +1,1 @@
-[{"navFile":"src/main/res/navigation/nav_graph.xml","javaFiles":["com.example.wordsapp.LetterListFragmentDirections","com.example.wordsapp.WordListFragmentArgs"]}]
+[{"navFile":"src/main/res/navigation/nav_graph.xml","javaFiles":["com.example.wordsapp.LetterListFragmentDirections","com.example.wordsapp.WordListFragmentArgs","com.example.wordsapp.ConversationsDirections","com.example.wordsapp.ConversationFragmentArgs"]}]

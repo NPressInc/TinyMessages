@@ -22,5 +22,9 @@
     {
         "merged": "/home/william/Documents/TinyWeb/Apps/TinyMessages/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_word_list.xml",
         "source": "/home/william/Documents/TinyWeb/Apps/TinyMessages/app/src/main/res/layout/fragment_word_list.xml"
+    },
+    {
+        "merged": "/home/william/Documents/TinyWeb/Apps/TinyMessages/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/conversation_fragment.xml",
+        "source": "/home/william/Documents/TinyWeb/Apps/TinyMessages/app/src/main/res/layout/conversation_fragment.xml"
     }
 ]

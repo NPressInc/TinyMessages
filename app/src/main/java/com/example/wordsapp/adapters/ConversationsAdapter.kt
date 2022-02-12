@@ -27,6 +27,7 @@ import android.widget.TextView
 import androidx.annotation.RequiresApi
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
+import com.example.wordsapp.ConversationsDirections
 import com.example.wordsapp.data.DataSource
 import com.example.wordsapp.R
 import  com.example.wordsapp.LetterListFragmentDirections
@@ -66,7 +67,11 @@ class ConversationsAdapter :
         // Setup custom accessibility delegate to set the text read
         return ConversationsViewHolder(layout).listen { pos, type ->
             val item = dataset.get(pos)
-            Log.i("ConversationsAdapter",item.Title)
+            //Log.i("ConversationsAdapter",item.Title)
+            //Log.i("ConversationsAdapter",item.ConversationID)
+            val action = ConversationsDirections.actionConversationsToConversationFragment(id = item.ConversationID)
+            // Navigate using that action
+            parent.findNavController().navigate(action)
         }
     }
 

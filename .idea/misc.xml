@@ -5,6 +5,7 @@
       <map>
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.3677536231884058" />
         <entry key="app/src/main/res/layout/conversationItemView.xml" value="0.333786231884058" />
+        <entry key="app/src/main/res/layout/conversation_fragment.xml" value="0.19114583333333332" />
         <entry key="app/src/main/res/layout/conversation_item_view.xml" value="0.3582427536231884" />
         <entry key="app/src/main/res/layout/conversationview.xml" value="0.333786231884058" />
         <entry key="app/src/main/res/layout/fragment_conversations.xml" value="0.333786231884058" />

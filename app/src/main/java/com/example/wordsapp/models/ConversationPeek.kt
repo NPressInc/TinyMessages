@@ -24,5 +24,6 @@ data class ConversationPeek(
     @DrawableRes val imageResourceId: Int,
     val Title: String,
     val DateTime: String,
-    val Details: String
+    val Details: String,
+    val ConversationID: String
 )

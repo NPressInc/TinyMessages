@@ -1,5 +1,6 @@
 package com.example.wordsapp
 
+import android.content.Context
 import android.os.Bundle
 import android.text.style.ClickableSpan
 import android.util.Log
@@ -13,6 +14,9 @@ import com.example.wordsapp.adapters.ConversationsAdapter
 import com.example.wordsapp.adapters.LetterAdapter
 import com.example.wordsapp.databinding.FragmentConversationsBinding
 import com.example.wordsapp.models.ConversationPeek
+import java.io.File
+import java.io.FileInputStream
+import java.io.FileOutputStream
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -52,8 +56,9 @@ class Conversations : Fragment() {
         recyclerView.layoutManager = LinearLayoutManager(context)
         recyclerView.adapter = ConversationsAdapter()
 
-
     }
+
+
 
     override fun onDestroyView() {
         super.onDestroyView()

@@ -41,5 +41,20 @@
         android:id="@+id/conversations"
         android:name="com.example.wordsapp.Conversations"
         android:label="fragment_conversations"
-        tools:layout="@layout/fragment_conversations" />
+        tools:layout="@layout/fragment_conversations" >
+        <action
+            android:id="@+id/action_conversations_to_conversationFragment"
+            app:destination="@id/conversationFragment"
+            app:enterAnim="@anim/fragment_open_enter"
+            app:exitAnim="@anim/fragment_close_exit" />
+    </fragment>
+    <fragment
+        android:id="@+id/conversationFragment"
+        android:name="com.example.wordsapp.ConversationFragment"
+        android:label="conversation_fragment"
+        tools:layout="@layout/conversation_fragment" >
+        <argument
+            android:name="id"
+            app:argType="string" />
+    </fragment>
 </navigation>

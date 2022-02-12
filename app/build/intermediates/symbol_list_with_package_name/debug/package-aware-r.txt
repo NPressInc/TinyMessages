@@ -1688,6 +1688,7 @@ id action_bar_subtitle
 id action_bar_title
 id action_container
 id action_context_bar
+id action_conversations_to_conversationFragment
 id action_divider
 id action_image
 id action_letterListFragment_to_wordListFragment
@@ -1746,6 +1747,7 @@ id confirm_button
 id container
 id content
 id contentPanel
+id conversationFragment
 id conversations
 id coordinator
 id cos
@@ -1971,6 +1973,7 @@ id tag_screen_reader_focusable
 id tag_transition_group
 id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
+id testId
 id test_checkbox_android_button_tint
 id test_checkbox_app_button_tint
 id test_radiobutton_android_button_tint
@@ -2081,6 +2084,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_main
+layout conversation_fragment
 layout conversation_item_view
 layout custom_dialog
 layout design_bottom_navigation_item

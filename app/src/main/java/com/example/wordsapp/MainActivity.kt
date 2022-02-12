@@ -15,6 +15,7 @@
  */
 package com.example.wordsapp
 
+import android.content.Context
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.NavController
@@ -34,6 +35,9 @@ class MainActivity : AppCompatActivity() {
 
         val binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+
+
 
         // Get the navigation host fragment from this Activity
         val navHostFragment = supportFragmentManager
