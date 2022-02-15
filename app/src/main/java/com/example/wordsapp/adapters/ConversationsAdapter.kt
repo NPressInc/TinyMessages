@@ -16,12 +16,10 @@
 package com.example.wordsapp.adapters
 
 import android.os.Build
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.view.accessibility.AccessibilityNodeInfo
-import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.annotation.RequiresApi
@@ -30,7 +28,6 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.wordsapp.ConversationsDirections
 import com.example.wordsapp.data.DataSource
 import com.example.wordsapp.R
-import  com.example.wordsapp.LetterListFragmentDirections
 import com.example.wordsapp.models.ConversationPeek
 
 /**
@@ -41,7 +38,7 @@ class ConversationsAdapter :
 
     // Generates a [CharRange] from 'A' to 'Z' and converts it to a list
 
-    val dataset = DataSource.ConversationPeeks
+    val dataset = DataSource.ConversationsPeeks
 
     public var onItemClick: ((ConversationPeek) -> Unit)? = null
 

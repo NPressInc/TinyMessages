@@ -55,7 +55,6 @@ class ConversationFragment : Fragment() {
 
         // Set the viewModel for data binding - this allows the bound layout access
         // to all the data in the VieWModel
-        binding.testId.text = ConversationID
 
         //Log.i("ConversationFragment", ConversationID)
 

@@ -24,7 +24,7 @@ import com.example.wordsapp.models.ConversationPeek
  */
 object DataSource {
 
-    val ConversationPeeks: List<ConversationPeek> = listOf(
+    val ConversationsPeeks: List<ConversationPeek> = listOf(
         ConversationPeek(
             R.drawable.ic_baseline_account_circle_24,
             "Tzeitel",

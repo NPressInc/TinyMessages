@@ -27,3 +27,11 @@ data class ConversationPeek(
     val Details: String,
     val ConversationID: String
 )
+
+data class ConversationContent(
+    @DrawableRes val imageResourceId: Int,
+    val Title: String,
+    val ConversationID: String,
+
+
+)
