@@ -12,6 +12,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.wordsapp.Identity
 import com.example.wordsapp.R
 import com.example.wordsapp.Utils.DateUtilities
+import com.example.wordsapp.data.DataSource
 import com.example.wordsapp.models.Message
 import java.text.SimpleDateFormat
 import java.util.*
@@ -20,9 +21,9 @@ import java.util.*
 private const val VIEW_TYPE_MY_MESSAGE = 1
 private const val VIEW_TYPE_OTHER_MESSAGE = 2
 
-class ConversationAdapter (val context: Context) : RecyclerView.Adapter<MessageViewHolder>(){
+class ConversationAdapter (val context: Context?) : RecyclerView.Adapter<MessageViewHolder>(){
 
-    private val messages: ArrayList<Message> = ArrayList()
+    private val messages: MutableList<Message> = DataSource.MessagesDemo
 
     private var ID = Identity()
 
@@ -32,7 +33,7 @@ class ConversationAdapter (val context: Context) : RecyclerView.Adapter<MessageV
 
     fun addMessage(message: Message){
         messages.add(message)
-        notifyDataSetChanged()
+        this.notifyDataSetChanged();
     }
 
     override fun getItemViewType(position: Int): Int {

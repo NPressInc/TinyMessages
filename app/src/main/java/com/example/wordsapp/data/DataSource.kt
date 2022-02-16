@@ -18,6 +18,7 @@ package com.example.wordsapp.data
 
 import  com.example.wordsapp.R
 import com.example.wordsapp.models.ConversationPeek
+import com.example.wordsapp.models.Message
 
 /**
  * An object to generate a static list of dogs
@@ -158,5 +159,58 @@ object DataSource {
             "Digging in the garden",
             "asdf20"
         )
+    )
+
+    val MessagesDemo: MutableList<Message> = mutableListOf(
+        Message(
+            "me",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse semper auctor diam, vel posuere nisi pretium at. Donec varius diam massa, sit amet pellentesque nisi tempor quis. Pellentesque consectetur odio ex, ac efficitur enim gravida id. Praesent placerat mollis risus, in porttitor risus condimentum sit amet. Etiam scelerisque, erat vel sollicitudin malesuada, erat ante pulvinar purus, quis placerat quam quam eleifend magna. Quisque sed tempor leo, vel scelerisque ligula. Integer sed euismod libero. Aenean erat justo, blandit at bibendum ac, gravida vitae lectus.",
+            1644960919735,
+            "1234"
+
+        ),
+        Message(
+            "dave",
+            "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus placerat laoreet diam, eget interdum magna interdum at. Praesent vel pulvinar velit. Mauris et posuere nisl. Nulla facilisi. Praesent eu dolor quis quam laoreet ornare quis quis odio. Nullam semper condimentum leo, ut consequat erat pharetra et. Curabitur ut lacus ac erat dapibus interdum id eu ipsum. Cras pharetra urna orci, sed feugiat eros hendrerit non.",
+            1644961919735,
+            "1234"
+
+        ),
+        Message(
+            "me",
+            "hello3",
+            1644962919735,
+            "1234"
+
+        ),
+        Message(
+            "dave",
+            "hello4",
+            1644963919735,
+            "1234"
+
+        ),
+        Message(
+            "me",
+            ":)",
+            1644964919735,
+            "1234"
+
+        ),
+        Message(
+            "dave",
+            "hello6",
+            1644965919735,
+            "1234"
+
+        ),
+        Message(
+            "me",
+            "hello7",
+            1644966919735,
+            "1234"
+
+        ),
+
     )
 }

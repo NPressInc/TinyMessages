@@ -15,12 +15,19 @@
  */
 package com.example.wordsapp
 
+import android.app.Activity
 import android.content.Context
 import android.os.Bundle
+import android.view.MotionEvent
+import android.view.View
+import android.view.inputmethod.InputMethodManager
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.app.NavUtils
+import androidx.fragment.app.Fragment
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupActionBarWithNavController
+import com.example.wordsapp.Utils.navigationUtils
 import com.example.wordsapp.databinding.ActivityMainBinding
 
 /**
@@ -30,14 +37,15 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var navController: NavController
 
+    private  lateinit var navUtils: navigationUtils
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
+        navUtils = navigationUtils()
+
         val binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
-
-
 
         // Get the navigation host fragment from this Activity
         val navHostFragment = supportFragmentManager
@@ -52,6 +60,10 @@ class MainActivity : AppCompatActivity() {
      * Enables back button support. Simply navigates one element up on the stack.
      */
     override fun onSupportNavigateUp(): Boolean {
+        navUtils.hideKeyboard(this)
         return navController.navigateUp() || super.onSupportNavigateUp()
     }
+
+
+
 }
